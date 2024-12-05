@@ -1,4 +1,4 @@
-/* added fonts */
+/* add fonts */
 
 @font-face {
     font-family: 'Ysabeau';
@@ -48,8 +48,6 @@
     --black-color: #000000;
     --gray-bg: #EAEAEE;
     --rhythm: 1.5rem;
-    --base-font-size: 16px;
-    --spacing-unit: 1rem;
 }
 
 /* General Reset */
@@ -86,7 +84,9 @@ h1.white_text {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    white-space: nowrap;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide any overflowing text if necessary */
+    text-overflow: ellipsis; /* Adds ellipsis (...) if the text overflows */
 }
 
 /* Hamburger Menu */
@@ -170,14 +170,14 @@ nav ul li a:hover {
 
 /* Main Content */
 main {
-    padding-top: 5rem;
-    padding-bottom: 6rem;
+    padding-top: 5rem; /* Adjust for header height */
+    padding-bottom: 4rem; /* Adjust based on footer height */
     position: relative;
     z-index: 1000; /* Lower than header and navigation */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    align-items: center; /* Center content horizontally */
+    gap: 2rem; /* Add spacing between each blog post */
 }
 
 /* Image Wrapper Styles */
@@ -193,7 +193,8 @@ main {
 .image-link {
     display: block;
     position: relative;
-    border-radius: 8px;
+    overflow: hidden; /* Ensures text does not overflow outside the image */
+    border-radius: 8px; /* Rounded corners for images */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
@@ -233,64 +234,19 @@ main {
 }
 
 .image-container:hover .text-overlay {
-    opacity: 0.9;
+    opacity: 0.9; /* Make text overlay more visible */
 }
 
 /* Footer */
 .footer {
-    font-size: 1rem;
+    font-size: .7rem; /* Adjust size to fit text in one line */
     font-weight: 500;
     background: var(--primary-color);
     color: var(--white-color);
     text-align: center;
-    padding: 2rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-/* Footer Link */
-.footer a {
-    text-decoration: none;
-    color: var(--white-color);
-    font-size: 1.25rem;
-    font-weight: inherit;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-    color: var(--gray-bg);
-}
-
-main h1 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.bucket-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.bucket-list li {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    background-color: var(--gray-bg);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Paragraph Styles excluding text-overlay paragraphs */
-p:not(.text-overlay) {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: var(--black-color);
-    margin-bottom: 2rem;
-    padding: 0 1.5rem;
-    text-align: left;
-    font-weight: 400;
-    max-width: 900px;
+    padding: 1rem;
+    position: fixed; /* Fixes the footer at the bottom */
+    bottom: 0; /* Aligns it to the bottom */
+    width: 100%; /* Ensures it spans the full width */
+    z-index: 1000; /* Keeps it above other elements if necessary */
 }

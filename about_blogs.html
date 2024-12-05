@@ -10,30 +10,48 @@
 
 </head>
 <body>
-    <!--Added a class here for blue header-->
-    <section class="header">
+    <header>
+        <!-- Toggle for Hamburger Menu -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">My Blogs</a></li>
+                <li><a href="bucket_list.html">Bucket List</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="about_blogs.html">About Blogs</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header Title -->
         <h1 class="white_text">Maayan's Travel Blog</h1>
-        <a href="index.html">My Blogs</a>
-        <a href="bucket_list.html">Bucket List</a>
-        <a href="about_me.html">About Me</a>
-        <a href="about_blogs.html">About Blogs</a>
-    </section>
-    
-    <!--Header with logo to left and ham menu to right-->
+    </header>
 
+    <main>
     <h1>About Blogs</h1>
-
     <!--Image-->
-    <img class="center-image" alt="Travel" src="about_blogs_pics/Optimized/3A8DF51B-5386-41DD-AF6A-5772441F7F87_1_105_c.jpg" width="400" />
+    
+    <!--Image-->
+    <div class="image-wrapper">
+        <div class="image-container">
+            <img alt="Bahamas" src="about_blogs_pics/Optimized/3A8DF51B-5386-41DD-AF6A-5772441F7F87_1_105_c.jpg" width="400">
+        </div>
+    </div>
 
     <p>
         I have been wanting to make a blog website for my travels for a long time now. My goal with this website is to make it easier for teenagers and young adults (like me) to decide on destinations and to plan their trips. A trip for a seventeen to twenty eight year old (for example) can look very different from a trip for a married couple with kids. And over the past few years, I have found that it is very time consuming to plan trips, especially for teens and young adults who are new to traveling, have unique wants, and are new to planning their own travels. My hope is that with this blog, I can give insights, tips, and recommendations to other teenagers and young adults who would like to travel in the same way that I do.
     </p>
-
+    </main>
+    
     <!--Footer-->
-    <!--Added a class here for blue footer-->
     <section class="footer">
-        <h1 class="white_text2">Contact Me</h1>
+        <a href="mailto:maayan.chashper@gmail.com" class="white_text2">Contact Me</a>
     </section>
 </body>
 </html>
