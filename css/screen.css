@@ -320,6 +320,7 @@ p:not(.text-overlay) {
     text-align: left;
     font-weight: 400;
     max-width: 900px;
+    word-wrap: break-word;
 }
 
 .blog-navigation {
