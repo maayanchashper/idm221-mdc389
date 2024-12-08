@@ -80,18 +80,35 @@ header {
 }
 
 h1.white_text {
-    font-size: 2rem; /* Adjust size to fit text in one line */
+    font-size: 1.8rem;
     font-weight: 800;
-    margin-left: auto; /* Let the text adjust dynamically */
-    margin-right: auto; /* Center the title */
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
 h1.white_text a {
-    color: inherit; /* Inherit the color from the parent h1 */
-    text-decoration: none; /* Remove underline */
-    font-size: inherit; /* Inherit font-size from h1 */
-    font-weight: inherit; /* Inherit font-weight from h1 */
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Main Content */
+main {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    position: relative;
+    z-index: 1000; /* Lower than header and navigation */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+main h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 h1 {
@@ -193,18 +210,6 @@ nav ul li a:hover {
     transform-origin: bottom left;
 }
 
-/* Main Content */
-main {
-    padding-top: 5rem;
-    padding-bottom: 6rem;
-    position: relative;
-    z-index: 1000; /* Lower than header and navigation */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
 /* Image Wrapper Styles */
 .image-wrapper {
     display: grid;
@@ -287,11 +292,6 @@ main {
 .footer a:hover {
     text-decoration: underline;
     color: var(--gray-bg);
-}
-
-main h1 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
 }
 
 .bucket-list {
