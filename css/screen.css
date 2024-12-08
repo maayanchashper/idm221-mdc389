@@ -213,11 +213,11 @@ nav ul li a:hover {
 /* Image Wrapper Styles */
 .image-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 1rem; /* Space between images */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem; /* Matches paragraph margin for consistent spacing */
     width: 100%;
     justify-items: center; /* Center each image within grid cells */
-    padding: 10px;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -315,7 +315,7 @@ p:not(.text-overlay) {
     font-size: 1.2rem;
     line-height: 1.6;
     color: var(--black-color);
-    margin-bottom: 2rem;
+    margin: 1.5rem 0; /* Consistent spacing between paragraphs and other elements */
     padding: 0 1.5rem;
     text-align: left;
     font-weight: 400;
