@@ -73,7 +73,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2000; /* Higher than all content */
+    z-index: 2000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,9 +138,9 @@ h3 {
     height: 24px;
     width: 30px;
     position: absolute;
-    right: 1rem; /* Position the button on the left */
-    top: 1.5rem; /* Add top padding to avoid overlap */
-    z-index: 2100; /* Ensure it's above everything else */
+    right: 1rem;
+    top: 1.5rem;
+    z-index: 2100; /* Above everything else */
 }
 
 .nav-toggle-label span {
@@ -219,7 +219,7 @@ nav ul li a:hover {
     justify-items: center; /* Center each image within grid cells */
     padding: 0 10px;
     box-sizing: border-box;
-    margin: 0; /* Reset any unnecessary margins */
+    margin: 0;
 
     display: flex;
     flex-direction: column;
@@ -243,7 +243,7 @@ nav ul li a:hover {
     border-radius: 8px;
     margin: 0;
     padding: 0;
-    margin-bottom: 0; /* Remove unnecessary spacing below images */
+    margin-bottom: 0;
 }
 
 /* Text Overlay Styling */
@@ -321,8 +321,8 @@ nav ul li a:hover {
 }
 
 p {
-    margin-top: 1rem; /* Reduce top margin */
-    margin-bottom: 1rem; /* Adjust bottom margin */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Paragraph Styles excluding text-overlay paragraphs */
