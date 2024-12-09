@@ -80,7 +80,7 @@ header {
 }
 
 h1.white_text {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 800;
     margin-left: auto;
     margin-right: auto;
@@ -219,6 +219,12 @@ nav ul li a:hover {
     justify-items: center; /* Center each image within grid cells */
     padding: 10px;
     box-sizing: border-box;
+
+    .image-wrapper,
+p:not(.text-overlay),
+h3 {
+    margin-bottom: 2rem; /* Consistent gap of 2rem */
+}
 }
 
 /* Image Link Styling */
@@ -276,7 +282,7 @@ nav ul li a:hover {
     background: var(--primary-color);
     color: var(--white-color);
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     bottom: 0;
     width: 100%;
     z-index: 1000;
