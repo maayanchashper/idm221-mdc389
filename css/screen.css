@@ -124,7 +124,7 @@ h2 {
 }
 
 h3 {
-    padding: 0rem;
+    padding: 1rem;
     align-items: center;
     text-align: center;
 }
@@ -330,7 +330,7 @@ p:not(.text-overlay) {
     font-size: 1.2rem;
     line-height: 1.6;
     color: var(--black-color);
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     padding: 0 1.5rem;
     text-align: left;
     font-weight: 400;
