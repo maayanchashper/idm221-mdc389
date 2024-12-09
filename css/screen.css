@@ -217,8 +217,9 @@ nav ul li a:hover {
     gap: 1rem; /* Space between images */
     width: 100%;
     justify-items: center; /* Center each image within grid cells */
-    padding: 10px;
+    padding: 0 10px;
     box-sizing: border-box;
+    margin: 0; /* Reset any unnecessary margins */
 }
 
 /* Image Link Styling */
@@ -236,6 +237,8 @@ nav ul li a:hover {
     height: 100%;
     overflow: hidden;
     border-radius: 8px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Text Overlay Styling */
@@ -258,6 +261,8 @@ nav ul li a:hover {
     max-width: 100%; /* Prevents images from overflowing their containers */
     object-fit: cover; /* Ensures images fill the container without stretching */
     transition: transform 0.3s ease;
+    margin: 0;
+    padding: 0;
 }
 
 /* Hover Effect for Images */
