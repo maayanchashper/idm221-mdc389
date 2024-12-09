@@ -220,6 +220,10 @@ nav ul li a:hover {
     padding: 0 10px;
     box-sizing: border-box;
     margin: 0; /* Reset any unnecessary margins */
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Add consistent spacing between image and content */
 }
 
 /* Image Link Styling */
@@ -239,6 +243,7 @@ nav ul li a:hover {
     border-radius: 8px;
     margin: 0;
     padding: 0;
+    margin-bottom: 0; /* Remove unnecessary spacing below images */
 }
 
 /* Text Overlay Styling */
@@ -313,6 +318,11 @@ nav ul li a:hover {
     padding: 0.5rem 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin-top: 1rem; /* Reduce top margin */
+    margin-bottom: 1rem; /* Adjust bottom margin */
 }
 
 /* Paragraph Styles excluding text-overlay paragraphs */
